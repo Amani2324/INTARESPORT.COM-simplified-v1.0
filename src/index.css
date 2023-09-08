@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-200;
+}
+.navLinks span {
+  @apply text-white font-semibold text-base p-2;
+}
+
+.mobileNavLinks a {
+  @apply text-white font-medium border-b border-gray-400 pb-4 text-center;
+}
+
+.mobileNavLinks {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  top: 25%;
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  z-index: 99;
+}
+
+p {
+  @apply pb-10;
+}
+
+li {
+  @apply py-2;
+}
+
+.content {
+  @apply bg-white flex flex-col md:max-w-4xl md:ml-20 md:px-10 pt-5 px-2;
+}
+
+.image-content {
+  @apply flex md:justify-center;
+}
+.image-content img {
+  @apply  md:w-80 md:h-72 w-64 h-52 mx-auto;
+}
+
+.commentSection textarea {
+  @apply bg-gray-200;
+}
+
+.popularInPageRead ul {
+  @apply list-disc text-black pl-8 font-normal text-xl;
+}
+
+.footer {
+  @apply px-3;
+}
