@@ -9,6 +9,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 //import DisqusThread from "../Components/DisqusThread";
 //import DisqusComments from "./DisqusComment";
 import Comments from "./Comments";
+import SomaAyandi from "../Components/SomaAyandi";
 
 const POST = gql`
   query GetPost($id: ID!) {
@@ -70,9 +71,11 @@ const PostDetailsPage = ({ url }) => {
 
         {/*<ShareButton />*/}
 
-        <div className="pl-3 font-normal">
+        <div className="pl-3 font-normal text-lg">
           <ReactMarkdown>{data.post.data.attributes.postContent}</ReactMarkdown>
+          <SomaAyandi />
         </div>
+        <p className=" flex justify-center text-slate-900 text-xl font-bold pt-10">COMMENTAIRES</p>
         <Comments fullUrl={url} id={id} />
       </div>
       {/*

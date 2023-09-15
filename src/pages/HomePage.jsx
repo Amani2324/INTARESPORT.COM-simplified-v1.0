@@ -51,7 +51,8 @@ const HomePage = () => {
                   className="md:w-48 md:h-40 bg-cover w-1/4 h-1/4"
                 />
 
-                <p className="text-black pl-3 md:pl-0 font-medium font-sans text-lg -mb-7">
+                <p className="text-gray-800 pl-3 md:pl-0 font-bold text-lg
+                 -mb-7">
                   {post.attributes.postTitle}
                 </p>
               </div>

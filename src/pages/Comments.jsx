@@ -26,7 +26,7 @@ const Comments = ({ fullUrl, id }) => {
       });
     }
   }, []);
-  return <div id="disqus_thread"></div>;
+  return <div id="disqus_thread" className="-pt-16"></div>;
 };
 
 export default Comments;
