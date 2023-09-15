@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sport": {
+    "Home": {
       "type": "string"
     }
   }

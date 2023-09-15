@@ -12,20 +12,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "postCategory": {
-      "type": "string"
-    },
     "postTitle": {
       "type": "string"
     },
     "postAuthor": {
       "type": "string"
     },
-    "postTime": {
+    "postCategory": {
       "type": "string"
     },
     "postContent": {
       "type": "richtext"
+    },
+    "postTime": {
+      "type": "string"
     },
     "coverImg": {
       "type": "media",

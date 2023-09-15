@@ -6,7 +6,7 @@ import { useQuery, gql } from "@apollo/client";
 
 const POSTS = gql`
   query GetPosts {
-    posts(sort:"id:desc") {
+    posts(sort: "id:desc") {
       data {
         id
         attributes {

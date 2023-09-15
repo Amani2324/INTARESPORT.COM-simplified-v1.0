@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../images/logo.jpg";
 import HamburgerMenu from "./HamburgerMenu";
-import DesktopSearch from "./DesktopSearch";
-import MobileSearch from "./MobileSearch";
+//import DesktopSearch from "./DesktopSearch";
+//import MobileSearch from "./MobileSearch";
 import { Link } from "react-router-dom";
 
 //import MobileNavLinks from "./MobileNavLinks"
@@ -12,8 +12,8 @@ const Navbar = () => {
       <HamburgerMenu />
       <Logo />
       <BrandName />
-      <MobileSearch />
-     <DesktopSearch />
+      {/*<MobileSearch />*/}
+      {/*<DesktopSearch />*/}
       <SocialMediaIcons />
     </div>
   );
@@ -32,7 +32,7 @@ const BrandName = () => {
   return (
     <Link to="/">
       <div className="flex basis-1/4">
-        <h2 className="  text-white text-lg font-bold text-center">
+        <h2 className="  text-white text-lg font-bold text-center mr-6">
           INTARE SPORT
         </h2>
       </div>

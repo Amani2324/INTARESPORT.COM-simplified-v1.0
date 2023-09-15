@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ShareButton from "../Components/ShareButton";
+//import ShareButton from "../Components/ShareButton";
 import CommentSection from "../Components/CommentSection";
 import Footer from "../Components/Footer";
-import NewsLetter from "../Components/NewsLetter";
+//import NewsLetter from "../Components/NewsLetter";
 import { useQuery, gql } from "@apollo/client";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 //import DisqusThread from "../Components/DisqusThread";
@@ -34,7 +34,7 @@ const POST = gql`
   }
 `;
 
-const PostDetailsPage = ({ url}) => {
+const PostDetailsPage = ({ url }) => {
   const { id } = useParams();
   const { loading, error, data } = useQuery(POST, {
     variables: { id: id },
@@ -67,7 +67,8 @@ const PostDetailsPage = ({ url}) => {
             src={`http://localhost:1337${data.post.data.attributes.coverImg?.data?.attributes?.url}`}
           />
         </div>
-        <ShareButton />
+
+        {/*<ShareButton />*/}
 
         <div className="pl-3 font-normal">
           <ReactMarkdown>{data.post.data.attributes.postContent}</ReactMarkdown>
@@ -79,7 +80,7 @@ const PostDetailsPage = ({ url}) => {
       <Recommended />
       <MostPopular />
       */}
-      <NewsLetter />
+      {/*<NewsLetter />*/}
       <Footer />
     </>
   );
