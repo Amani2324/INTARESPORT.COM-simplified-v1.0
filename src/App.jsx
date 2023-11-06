@@ -12,7 +12,7 @@ import VideosPage from "./pages/VideosPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import TermsConditionsPage from "./pages/TermsConditionsPage";
-import Commentpolicy from "./pages/CommentPolicy";
+
 
 const client = new ApolloClient({
   connectToDevTools: true,
@@ -36,7 +36,6 @@ const App = () => {
             <Route path="VideosPage" element={<VideosPage />}></Route>
             <Route path="ContactUsPage" element={<ContactUsPage />}></Route>
             <Route path="AboutUsPage" element={<AboutUsPage />}></Route>
-            <Route path="Commentpolicy" element={<Commentpolicy />}></Route>
             <Route
               path="TermsConditionsPage"
               element={<TermsConditionsPage />}
