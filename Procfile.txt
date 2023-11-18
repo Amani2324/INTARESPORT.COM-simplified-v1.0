@@ -1,1 +1,2 @@
 web: serve -s -l 3000 dist
+web: vite preview --port $PORT
