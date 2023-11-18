@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm i -dev && webpack --mode production",
-   "heroku-postbuild": "npm build",
-     "start": "webpack-dev-server --mode development --hot --open --port $PORT"
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "./src/main.jsx"
+
   
   },
   "dependencies": {
