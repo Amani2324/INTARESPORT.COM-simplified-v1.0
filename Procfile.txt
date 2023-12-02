@@ -1,3 +1,1 @@
-web: npm start
-web: serve -s -l 3000 dist
-
+web: node server.js
