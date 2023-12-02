@@ -1,1 +1,2 @@
 web: PORT=3000 node server.js
+react: npm run start
